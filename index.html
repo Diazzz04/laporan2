@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Teori</title>
+    <style id="styleSheet">
+        /* Style rapi dan kontras baik */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            color: #1a73e8;
+        }
+
+        h3 {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .section-content {
+            margin: 10px 0 20px;
+            padding: 10px;
+            border-left: 3px solid #ddd;
+            display: block;
+        }
+
+        /* Style berantakan dan kontras buruk */
+        .messy-mode {
+            background-color: #ff00ff;
+            color: #00ff00;
+            font-family: 'Comic Sans MS', cursive;
+            letter-spacing: 2px;
+            line-height: 1.1;
+        }
+
+        .messy-mode h1 {
+            font-size: 48px;
+            color: #ffcc00;
+            text-align: center;
+            transform: rotate(-15deg);
+        }
+
+        .messy-mode h2 {
+            font-size: 36px;
+            color: #ff0000;
+            text-align: right;
+            transform: rotate(10deg);
+        }
+
+        .messy-mode h3 {
+            color: #00ffff;
+            font-size: 28px;
+            margin-left: 30px;
+            transform: rotate(-7deg);
+        }
+
+        .messy-mode .section-content {
+            background-color: #222;
+            color: #ff00ff;
+            border-left: 8px dashed #00ff00;
+            padding: 20px;
+            margin: 20px;
+            display: block;
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        /* Detail tambahan untuk konten yang lebih berantakan */
+        .messy-mode .pendahuluan {
+            background-color: #ff4500;
+            transform: rotate(-10deg) translateX(-15px);
+            font-size: 18px;
+            padding: 30px;
+            margin: 30px 0;
+            color: #0000ff;
+        }
+
+        .messy-mode .metode {
+            background-color: #008000;
+            transform: rotate(15deg) translateX(20px);
+            font-size: 16px;
+            padding: 35px;
+            margin: 25px 0;
+            color: #ff0000;
+        }
+
+        .messy-mode .hasil {
+            background-color: #00008b;
+            transform: rotate(-20deg) translateX(-30px);
+            font-size: 20px;
+            padding: 25px;
+            margin: 20px 0;
+            color: #ffff00;
+        }
+
+        .messy-mode .kesimpulan {
+            background-color: #ff1493;
+            transform: rotate(10deg) translateX(10px);
+            font-size: 18px;
+            padding: 28px;
+            margin: 15px 0;
+            color: #00ffff;
+        }
+
+        .messy-mode button {
+            font-size: 20px;
+            background-color: #ff0000;
+            color: #ffff00;
+            padding: 15px;
+            border: 3px dotted #00ff00;
+            cursor: pointer;
+            transform: rotate(-15deg);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Judul dan Sub Judul -->
+    <h1>LAPORAN TEORI</h1>
+    <h2>Diaz Andhika Nugraha | 202331123</h2>
+
+    <!-- Konten Laporan dengan Sub Judul yang Bisa Disembunyikan -->
+    <h3 onclick="toggleContent(this)">1. Mengapa menggunakan CSS dan JavaScript dalam pemrograman web?</h3>
+    <div class="section-content pendahuluan">
+        <p>Bahasa pemrograman yang dimanfaatkan adalah HTML sebagai struktur rangka sebuah halaman web, CSS sebagai representasi halaman web, dan JavaScript sebagai responsif halaman web. Dengan bahasa pemrograman tersebut, maka memungkinkan untuk membuat halaman web yang baik dan responsif sesuai dengan yang diinginkan.</p>
+    </div>
+
+    <h3 onclick="toggleContent(this)">2.Bagaimana CSS dan JavaScript dapat diintegrasikan dalam pemrograman web?</h3>
+    <div class="section-content metode">
+        <p>2.Dalam pemrograman web, CSS dan JavaScript diintegrasikan dengan HTML untuk menciptakan halaman yang interaktif dan menarik. Berikut cara keduanya bekerja bersama:</p>
+        <li>HTML untuk Struktur: HTML membentuk struktur dasar dari halaman web, seperti elemen teks, gambar, dan tombol.</li>
+        <li>CSS untuk Tampilan: CSS mengatur tampilan visual elemen-elemen HTML, seperti warna, tata letak, dan animasi dasar, sehingga membuat halaman lebih menarik dan terstruktur.</li>
+        <li>JavaScript untuk Interaktivitas: JavaScript menambahkan interaksi dinamis pada halaman web. Dengan JavaScript, elemen HTML dapat diubah saat pengguna berinteraksi, seperti memvalidasi input pada formulir, menampilkan pop-up, atau memperbarui konten tanpa memuat ulang halaman.</li>
+        <p>CSS dan JavaScript sering digabungkan untuk efek khusus. Contohnya, JavaScript dapat memanipulasi kelas CSS elemen tertentu untuk mengubah gaya saat pengguna melakukan aksi, seperti klik atau hover</p>
+    </div>
+
+    <h3 onclick="toggleContent(this)">3. Jelaskan apa saja keuntungan menggunakan JavaScipt dan CSS?</h3>
+    <div class="section-content hasil">
+        <p>keuntungan menggunakan java script dan css</p>
+        <li>Peningkatan Interaktivitas: JavaScript memungkinkan halaman web menjadi interaktif, seperti membuat animasi, memvalidasi data, dan memperbarui konten tanpa perlu memuat ulang halaman, sehingga meningkatkan pengalaman pengguna .</li>
+        <li>Meningkatkan Tampilan Visual: CSS digunakan untuk mengatur tampilan elemen-elemen pada halaman web, seperti warna, font, dan tata letak, sehingga situs web menjadi lebih menarik dan terstruktur dengan baik .</li>
+        <li>Pemeliharaan dan Pengembangan yang Lebih Efisien: Dengan memisahkan JavaScript untuk logika dan CSS untuk tampilan, pengembang dapat mengelola dan memperbarui bagian visual dan fungsional halaman secara terpisah, meningkatkan efisiensi dalam pemeliharaan.</li>
+        <li>Mengurangi Beban Server: JavaScript memungkinkan operasi dijalankan di sisi pengguna (client-side), sehingga mengurangi beban server dan mempercepat waktu respons halaman .</li>
+    </div>
+
+    <h3 onclick="toggleContent(this)">4. Jealskan apa saja keuntungan menggunakan Bootstrap?</h3>
+    <div class="section-content kesimpulan">
+        <p>meningkatkan fungsionalitas dan responsif 
+            dari antarmuka web dan berkontribusi pada evolusi praktik pengembangan web, membuka jalan bagi aplikasi web yang 
+            lebih efisien dan dinamis di masa depan.
+            </p>
+    </div>
+
+    <h3 onclick="toggleContent(this)">5.Berikan salah satu contoh penggunaan Bootstrap lalu jelaskan apa fungsinya serta berikan screenshot hasil running di web-nya!</h3>
+    <div class="section-content kesimpulan">
+        <p>Salah satu contoh penggunaan Bootstrap adalah dengan membuat halaman web sederhana yang menggunakan komponen Jumbotron. Jumbotron adalah elemen yang dirancang untuk menonjolkan informasi penting di halaman web, biasanya digunakan untuk menampilkan pesan sambutan atau informasi utama.</p>
+    </div>
+
+    <!-- Tombol Mode Tampilan -->
+    <button onclick="toggleMode()">Mode Berantakan</button>
+
+    <!-- JavaScript untuk Mengontrol Interaksi -->
+    <script>
+        // Fungsi untuk toggle konten setiap bagian berdasarkan konfirmasi
+        function toggleContent(header) {
+            const content = header.nextElementSibling;
+            const shouldHide = confirm('Apakah Anda ingin menyembunyikan konten dari bagian ini?');
+            if (shouldHide) {
+                content.style.display = content.style.display === 'none' ? 'block' : 'none';
+            }
+        }
+
+        // Fungsi untuk toggle antara mode rapi dan mode berantakan
+        function toggleMode() {
+            document.body.classList.toggle('messy-mode');
+        }
+    </script>
+
+</body>
+</html>
